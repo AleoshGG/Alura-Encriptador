@@ -1,0 +1,44 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #F3F5FC;
+}
+
+h1 {
+    padding: 4% 0 0 13%;
+}
+
+main {
+    padding: 0 10%;
+}
+
+.entrada > form > label {
+    display: block;
+    vertical-align: top;
+    padding: 25px 0;
+    font-size: 20px;
+    color: #0A3871;
+}
+
+
+.advertencia {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #495057;
+}
+
+.advertencia > svg {
+    margin-right: 5px;
+}
+
+#acciones {
+    padding: 3% 0 0 0;
+}
+
+.b-encriptar {
+    padding: 15px 150px;
+    font-size: 17px;
+    
+}
