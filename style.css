@@ -1,4 +1,4 @@
-body {
+body, #textoEntrada, #textoEntrada::placeholder {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -6,21 +6,36 @@ body {
 }
 
 h1 {
-    padding: 4% 0 0 13%;
+    padding: 2% 0 0 7%;
+    width: 60%;
 }
 
 main {
     padding: 0 10%;
 }
 
-.entrada > form > label {
+.entrada {
+    width: 57%;
+    display: inline-block;
+}
+
+#textoEntrada {
     display: block;
     vertical-align: top;
     padding: 25px 0;
     font-size: 20px;
     color: #0A3871;
+    background-color: transparent;
+    border: transparent;
 }
 
+#textoEntrada:focus{
+    outline:none;
+}
+
+#textoEntrada::placeholder {
+    color: #0A3871;
+}
 
 .advertencia {
     font-size: 12px;
@@ -37,8 +52,87 @@ main {
     padding: 3% 0 0 0;
 }
 
-.b-encriptar {
-    padding: 15px 150px;
+#b-encriptar {
+    padding: 15px 100px;
     font-size: 17px;
-    
+    border-radius: 20px;
+    margin-right: 15px;
+    background-color: #0A3871;
+    border: transparent;
+    color: white;
+} 
+
+#b-encriptar:hover {
+    background: #072B61;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 1s all;
+}
+
+#b-encriptar:active {
+    transition: 0s;
+    color: #000000;
+}
+
+#b-desencriptar {
+    padding: 15px 88px;
+    font-size: 17px;
+    border-radius: 20px;
+    background-color: 868E96;
+    border: transparent;
+    background-color:#ADB5BD;
+    color: #0A3871;
+    transition: 1.2s all;
+}
+
+#b-desencriptar:hover {
+    background: #868E96;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+#b-desencriptar:active {
+    transition: 0s;
+    color: #000000;
+}
+
+.salida {
+    position: relative;
+    bottom: 80px;
+    float: right;
+    width: 43%;
+}
+
+.rectangulo {
+    background: white;
+    padding: 5%;
+    height: 700px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px #ADB5BD;
+}
+
+.mensaje1 {
+    color: #343A40;
+    font-size: 30px;
+}
+
+.mensaje {
+    color: #343A40;
+}
+
+#textoSalida {
+    border: none;
+    vertical-align: top;
+    font-size: 20px;
+    color: #495057;
+    background-color: transparent;
+    border: transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#textoSalida:focus{
+    outline:none;
 }
