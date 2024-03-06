@@ -104,6 +104,10 @@ main {
 }
 
 .rectangulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 420px;
     background: white;
     padding: 5%;
     height: 700px;
@@ -112,16 +116,8 @@ main {
     box-shadow: 4px 4px 10px #ADB5BD;
 }
 
-.mensaje1 {
-    color: #343A40;
-    font-size: 30px;
-}
-
-.mensaje {
-    color: #343A40;
-}
-
 #textoSalida {
+    display: none;
     border: none;
     vertical-align: top;
     font-size: 20px;
@@ -135,4 +131,40 @@ main {
 
 #textoSalida:focus{
     outline:none;
+}
+
+.mensaje1 {
+    color: #343A40;
+    font-size: 30px;
+}
+
+.mensaje {
+    color: #343A40;
+}
+
+#vistaMuneco {
+    margin-top: 25%;
+}
+
+#b-copiar {
+    margin-top: 10px;
+    display: none;
+    padding: 15px 88px;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 2px solid #0A3871;
+    background-color:#ffffff;
+    color: #343A40;
+    transition: 1.2s all;
+}
+
+#b-copiar:hover {
+    background: #F3F5FC;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+#b-copiar:active {
+    transition: 0s;
+    color: #000000;
 }
