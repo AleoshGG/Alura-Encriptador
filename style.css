@@ -168,3 +168,57 @@ main {
     transition: 0s;
     color: #000000;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2em;
+    
+}
+
+#logo {
+    width: 70px;
+}
+
+.pies {
+    display: flex;
+    align-items: center;
+}
+
+.github {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #343A40;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+
+    .entrada {
+        width: 100%;
+    }
+
+    #textoEntrada {
+        max-height: 200px;
+    }
+
+    #b-encriptar {
+        margin-bottom: 1em;
+    }
+
+    .salida {
+        bottom: 0;
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    .rectangulo {
+        width: 100%;
+    }
+}

@@ -65,3 +65,18 @@ function copiar() {
     document.body.removeChild(aux);
 }
 
+function desencriptarTexto(){
+    let textoEN = document.getElementById('textoEntrada').value;
+    let textoDE0 = textoEN.replace(/ai/g, "a");
+    let textoDE1 = textoDE0.replace(/enter/g, "e");
+    let textoDE2 = textoDE1.replace(/imes/g, "i");
+    let textoDE3 = textoDE2.replace(/ober/g, "o");
+    let textoDE4 = textoDE3.replace(/ufat/g, "u");
+    return textoDE4;
+}
+
+function desencriptar() {
+    let textoDE = desencriptarTexto();
+    cambiarVista();
+    imprimirTexto(textoDE);
+}
