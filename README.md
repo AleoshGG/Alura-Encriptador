@@ -19,5 +19,5 @@ Estoy al pendiente de tus sujerencias ;)
 
 
 
- email spartanthealexvro@fake.com
+ email spartanthealexvro@gmail.com
 
